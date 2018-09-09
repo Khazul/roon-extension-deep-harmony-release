@@ -1,6 +1,6 @@
-# Deep Harmony [![Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/Khazul/donate)
+# Deep Harmony
 
-### A Roon Extension for Logitech Harmony
+### A Roon Extension for Logitech Harmony [![Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/Khazul/donate)
 
 ### Version: 2.0.0
 
