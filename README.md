@@ -434,9 +434,7 @@ These are node modules used that have a significant part to play. Thanks are due
 
 # Donating and some Background
 
-A number of people have asked about donating to support this project. At this time I have no mechanism in place to accept donations, however if you are interested, please hold onto the thought. I am currently researching platforms and requirements with [Liberapay](https://en.liberapay.com/) being the most likely. Here in the UK it seems to be a suprising administrative burden to set this up, so watch this space.
-
-The main cost is my time which I happily bare. Should you wish to donate, then this will be used primarily to purchase hardware that I would not otherwise consider to expand testing and or enable this and other related projects too pursue new and interesting directions.
+A number of people have asked about donating to support this project and I was a bit taken aback that people would actually wish to donate, but afterr giving it some thought, it occurs that accepting donation may allow develoopment to pursue direction that would otherwise be inaccessable for practical purposes. So to that end I have set up an account with Liberapay.
 
 Some of the ideas I am interesting in persuing are:
 
@@ -452,3 +450,4 @@ There is quite alot of crossover between with I do at work and the personal inte
 
 I wish more product companies were as enlightened as Roon Labs in the support they provide for community based extension of their product. While Roon (to my mind) has an excellent core architecture it is the possibility of extension and the extensions that many people in our community have created that sealed the deal for me and have made it the core of our music experience at home for my wife and myself. Finally we have a system with the richness of a PC based player, but that is standalone like a hardware player and like a the best hardware players can have a decent family friendly remote control and is muti-room and supports the sound quality aspirations of music and audio enthusiasts. Long may it continue!
 
+[![Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/Khazul/donate)
