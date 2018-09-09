@@ -1,8 +1,8 @@
-# Deep Harmony
+# Deep Harmony 
 
-### A Roon Extension for Logitech Harmony 
+### A Roon Extension for Logitech Harmony
 
-### Version: 2.0.0
+### Version: 2.0.0 
 
 [![Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/Khazul/donate)
 
@@ -106,7 +106,9 @@ Docker images are provided for linux hosts (x64 and ARMv7) only at this time. Th
 
 ### QNAP Container Station
 
-Locate the docker image &#39;roon-extension-deep-harmony&#39; via docker. In Container-Station on a QNAP NAS, enter 'khazul' into the search box from the 'Create' menu. This should list the image. For command line use, the docker pull command is shown here on the right.
+Locate the docker image &#39;roon-extension-deep-harmony&#39; via docker. In Container-Station on a QNAP NAS, ensure the docker-hub tab is selected then enter 'khazul' into the search box from the 'Create' menu. This should list the image. When the list of versions appears, then select the highest tagged **amd64** version rather than latest as it seems container station will pull the wrong (v1.x) version.
+
+For command line use, the docker pull command is shown here on the right.
 
 Create a container with network mode set to _host_. This is most important as otherwise neither Roon nor Harmony will discover this extension. Note, bridge mode may be usable as well.
 
@@ -444,12 +446,14 @@ Some of the ideas I am interesting in persuing are:
 
 * Some level of integration with Amazon Alexa and maybe Google Home. We use Amazon Alexa at home currently with a Spot and an Echo. I am interested in seeing of the Spot (and Show) can reasonably be used to display now playing information and provide basic voice and touch based media control.
 
-This project started as the first stage of a home dash-board to integrate media control, lighting (Philips Hue for example), perhaps heating (for eg, Tado, Nest etc) and security (Ring, Nest etc). In time I still plan on looking at ways in which all of these system can be brought together. 
+This project started as the first stage of a home dash-board to integrate media control, lighting (Philips Hue for example), perhaps heating (for eg, Tado, Nest etc) and security (Ring, Nest etc). In time I still plan on looking at ways in which all of these system can be brought together.
 
-I also work for a tiny company in the UK that produces software for mobile devices for use at home and at school to help to make the internet and safer and more productive place for your children as well as to encourage more restrained use of media devices in the home to allow for better focus on family life and personal development of your children. 
+I also work for a tiny company in the UK that produces software for mobile devices for use at home and at school to help to make the internet and safer and more productive place for your children as well as to encourage more restrained use of media devices in the home to allow for better focus on the family life and personal development of your children.
 
 There is quite alot of crossover between with I do at work and the personal interests I pursue for myself. We have all seen the fancy future promitional video of the future automated homes and perfect integrated families etc. In my own tiny way I try to make some of this a reality that we can all have while my employer attempts to positively tackle some of the resulting social fall out from our modern always-on connected world.
 
 I wish more product companies were as enlightened as Roon Labs in the support they provide for community based extension of their product. While Roon (to my mind) has an excellent core architecture it is the possibility of extension and the extensions that many people in our community have created that sealed the deal for me and have made it the core of our music experience at home for my wife and myself. Finally we have a system with the richness of a PC based player, but that is standalone like a hardware player and like a the best hardware players can have a decent family friendly remote control and is multi-room and supports the sound quality aspirations of music and audio enthusiasts. Long may it continue!
+
+___
 
 [![Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/Khazul/donate)
