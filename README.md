@@ -434,7 +434,7 @@ These are node modules used that have a significant part to play. Thanks are due
 
 # Donating and some Background
 
-A number of people have asked about donating to support this project and I was a bit taken aback that people would actually wish to donate, but afterr giving it some thought, it occurs that accepting donation may allow develoopment to pursue direction that would otherwise be inaccessable for practical purposes. So to that end I have set up an account with Liberapay.
+A number of people have asked about donating to support this project and I was a bit taken aback that people would actually wish to donate, but after giving it some thought, it occurs that accepting donations may allow development to pursue directions that would otherwise be inaccessable for practical _freeware_ purposes. So to that end I have set up an account with Liberapay and a donate buttonm may be found at the bottom. Thank you everyone for your ongoing support.
 
 Some of the ideas I am interesting in persuing are:
 
