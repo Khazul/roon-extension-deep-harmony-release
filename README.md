@@ -108,8 +108,6 @@ Docker images are provided for linux hosts (x64 and ARMv7) only at this time. Th
 
 Locate the docker image &#39;roon-extension-deep-harmony&#39; via docker. In Container-Station on a QNAP NAS, ensure the docker-hub tab is selected then enter 'khazul' into the search box from the 'Create' menu. This should list the image. When the list of versions appears, then select the highest tagged **amd64** version rather than latest as it seems container station will pull the wrong (v1.x) version.
 
-For command line use, the docker pull command is shown here on the right.
-
 Create a container with network mode set to _host_. This is most important as otherwise neither Roon nor Harmony will discover this extension. Note, bridge mode may be usable as well.
 
 Start the container.
