@@ -4,8 +4,6 @@
 
 ### Version: 2.0.0 
 
-[![Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/Khazul/donate)
-
 # Introduction  
 
 **Deep Harmony** is an extension for the Roon media system from Roon Labs LLC that provides integration with Logitech's Harmony Hub remote control system to provide activity detection and selection by and for Roon and provide volume/mute control from with the Roon UI. Additionally it includes a media device emulator that allows for transport control and other functions from a Harmony Hub remote control over WiFi.
@@ -107,6 +105,8 @@ Docker images are provided for linux hosts (x64 and ARMv7) only at this time. Th
 ### QNAP Container Station
 
 Locate the docker image &#39;roon-extension-deep-harmony&#39; via docker. In Container-Station on a QNAP NAS, ensure the docker-hub tab is selected then enter 'khazul' into the search box from the 'Create' menu. This should list the image. When the list of versions appears, then select the highest tagged **amd64** version rather than latest as it seems container station will pull the wrong (v1.x) version.
+
+For command line use, the docker pull command is shown here on the right.
 
 Create a container with network mode set to _host_. This is most important as otherwise neither Roon nor Harmony will discover this extension. Note, bridge mode may be usable as well.
 
@@ -350,6 +350,12 @@ There is also a section labelled _Logging switches_. Upon expanding this section
 | No X next to source device name | If you have a long Harmony hub name and/or activity name, then the X next to the external source control name is hidden so you cannot remove it. Use load defaults to reset the audio device settings. You will have to re-apply your chosen MQA, DSD and other settings. |
 
 # Change History
+
+## 2.0.1
+
+### Fixes
+ * Promise rejection warning when opening settings and no playlists have beeen setup preventing opening of settings view
+ * Initial state of debug switches not reflecting in dropdowns
 
 ## 2.0.0
 
