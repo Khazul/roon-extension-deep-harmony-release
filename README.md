@@ -2,7 +2,7 @@
 
 ## A Roon Extension for Logitech Harmony
 
-### Version: 2.0.2
+### Version: 2.1.0
 
 ## Introduction  
 
@@ -282,12 +282,17 @@ Once you have added the Roon Control to an activity, then I suggest you map the 
 | Play/Pause        | Play            | Play           | Harmony appears to treat both play and pause as play for Roku devices |
 | Play/Pause        | Pause           | Play           |                                          |
 | Stop              | Stop            | PowerOff       | Make sure power control for the Roku emulator device is disabled |
-| Skip back / Previous Track | Reverse | Rev           | Skip backward 30 seconds / hold for replay/previous track |
-| Skip forward / Next Track | Forward  | Fwd           | Skip forward 30 seconds / hold for next track |
-| Shuffle toggle    | Red             | Input HDMI1    | Toggle On/Off                            |
-| Loop cycle        | Green           | Input HDMI2    | Cycles Off/Once/Repeat                   |
-| Auto-radio toggle | Yellow          | Input HDMI3    | Toggle on/off                            |
-|                   | Blue            | Input HDMI4    | Future planned feature                   |
+| Skip back / Previous Track | Reverse | Reverse           | Skip backward 30 seconds / hold for replay/previous track |
+| Skip forward / Next Track | Forward  | FastForward           | Skip forward 30 seconds / hold for next track |
+| Volume Up         | Volume Up       | VolumeUp      | Optional - for controlling devices via Roon |
+| Volume Down       | Volume Down     | VolumeDown    | Optional - for controlling devices via Roon |
+| Volume Mute       | Volume Mute     | Mute    | Optional - for controlling devices via Roon |
+| Rewind            | Reverse         | InputAV      | Optional - for separate short/long press with Previous / Rewind |
+| Forward           | Forward         | InputUSB      | Optional - for separate short/long press with Next / Forward |
+| Shuffle toggle    | Red             | InputHDMI1    | Toggle On/Off                            |
+| Loop cycle        | Green           | InputHDMI2    | Cycles Off/Once/Repeat                   |
+| Auto-radio toggle | Yellow          | InputHDMI3    | Toggle on/off                            |
+|                   | Blue            | InputHDMI4    | Future planned feature                   |
 |                   | 1               | 1              | Favourite 1                              |
 |                   | 2               | 2              | Favourite 2                              |
 |                   | 3               | 3              | Favourite 3                              |
@@ -298,22 +303,21 @@ Once you have added the Roon Control to an activity, then I suggest you map the 
 |                   | 8               | 8              | Favourite 8                              |
 |                   | 9               | 9              | Favourite 9                              |
 |                   | 0               | 0              | Favourite 0                              |
-|                   | -               | Backspace      | Future planned feature                   |
+|                   | -               | -              | Future planned feature                   |
+|                   | E               | Backspace      | Future planned feature                   |
 |                   | Exit            | Home           | Future planned feature                   |
 |                   | Up              | Up             | Future planned feature                   |
 |                   | Down            | Down           | Future planned feature                   |
 |                   | Left            | Left           | Future planned feature                   |
 |                   | Right           | Right          | Future planned feature                   |
-|                   | OK              | Select         | Future planned feature                   |
+|                   | OK              | OK             | Future planned feature                   |
 |                   | Back            | Back           | Future planned feature                   |
-|                   | Channel Up      | Page Up        | Future planned feature                   |
-|                   | Channel Down    | Page Down      | Future planned feature                   |
+|                   | Channel Up      | ChannelUp      | Future planned feature                   |
+|                   | Channel Down    | ChannelDown    | Future planned feature                   |
 |                   | Guide           | Search         | Future planned feature                   |
 |                   | Info            | Info           | Future planned feature                   | 
-|                   |                 | Instant Replay |                                          |
-|                   |                 | Input AV1      |                                          |
-|                   |                 | Input Tuner    |                                          |
-|                   |                 | Input USB      |                                          |
+|                   |                 | InstantReplay |                                          |
+|                   |                 | InputTuner    |                                          |
 
 _Some buttons are not needed right now, for example all of the browsing related buttons and some have no labels at all... yet! For some of these buttons, there are planned future feature that will make use of them as Deep Harmony continues to be developed._ 
 
@@ -323,9 +327,24 @@ These mappings can be changed in the Roon settings.
 
 Note: while there are a number of other currently unused buttons, future planned features are likely to use them which is why the channel up/down, browse and input related Roku buttons have been left alone.
 
+### Options Section
+
+#### Skip/Seek track function
+* **Dual function** - Harmonmy remote is assumed to have _Reverse_ and _FastForward_ assigned to the seek/skip track buttons. Short presses will seek +/- 30 seconds and long presses will function as previous or next track.  
+* **Dual buttons** - then Harmony remote is assumed to have _Reverse_ and _FastForward_ assigned to short press and _InputAV_ and _InputUSB_ assigned to long press (as indicated as optionsal in the table above). Short press will seek +/-m 30 seconds and long press will skip to previous or next track. This tends to function better than the _Dual function_ option.  
+* **Reversed dual buttons** - then Harmony remote is assumed to have _Reverse_ and _FastForward_ assigned to short press and _InputAV_ and _InputUSB_ assigned to long press (as indicated as optionsal in the table above). Short press will skip to previous or next track and long press will seek +/-m 30 seconds (i.e. the reverse of the above).  
+
+#### Volume Linked to current activity
+* **Yes** - volume and mute controls can only change the volume of thee current Harmony activity.  
+* **No** - volume and mute controls are independent of the current Harmony activity and thus remain active even when the activity is not selected.  
+
+#### Unmute linked to volume change
+* **Yes** - when muted and volume is changed, then mute status is assumed to be reset to off. This is the behavior of many AVRs and integrated amplifiers.  
+* **No** - then when muted and volume is changes, the mute status remains unchanged. This setting is for use when a device needs to be explicitly unmuted.  
+
 ### Tools Section
 
-In additoin to the remote Pairing help for multiple hubs as described above the tools section also provide support for software updates and diagnostics.
+In addition to the remote Pairing help for multiple hubs as described above the tools section also provide support for software updates and diagnostics.
 
 #### Software updates
 
@@ -339,11 +358,15 @@ Deep Harmony will periodically check for new sofware updates. When an update is 
 
 The extension will now download and unpack the update in the background and then exit once this is complete which should be in under a minute. When running the extenion in docker and when using the run scripts, then the extension will install the update and restart automatically with the new version.
 
-#### Diagnostics
+#### Reset Configuration
+
+This allow full or partial reset of the extension configuration. It will not however effect Roon extension pairing, nor will you loose the remote of a remote with Harmony as this is ties to the selected remote identifier.
+**Yes - erase all settings** will remove all settings period. In general you should never need to do this. After doing this, you can still recover a remote pairing by selecting the remote identifier that was used before for the hub. There is no need to re-pair and setup the remote again with Harmony.
+**Yes - activities only** will remove all settings associated with activities (source and volume controls and control zone). Enabled hubs, associated remote identifiers and all hub based favourites will be preserved.
+
+#### Logging
 
 To facilitate diagnosing any issues you may encounter the extenion includes an extensive loggings system along with a web server to give easy access to those logs from another computer. As the Roon settings system does not appear have any means of clicking on a link within the settings UI, the link for accessing long is presented in a text box labelled _Logs (Copy the URL)_. If you click on this text, then it should be highlighthed and you should be able to copy it and paste it into the address bar of a web browser such as Chrome or Edge. The should result in downloading a zip file containing recent logs.
-
-There is also a section labelled _Logging switches_. Upon expanding this section there are many drops down for enabling or disabling logging of various components with in the extension. In general, you should probbaly leave these alone unless directed otherwise. The default setting here are chosen as a useful compromise to capture most likely issues without resulting in excessive CPU use due to log capture.
 
 ## Troubleshooting
 
@@ -356,6 +379,22 @@ There is also a section labelled _Logging switches_. Upon expanding this section
 | No X next to source device name | If you have a long Harmony hub name and/or activity name, then the X next to the external source control name is hidden so you cannot remove it. Use load defaults to reset the audio device settings. You will have to re-apply your chosen MQA, DSD and other settings. |
 
 ## Change History
+
+### 2.1.0
+
+#### New Features
+
+* Allow use of Harmony remote volume and mute to control other Roon DACs device level and other extension volume/mute controls.
+* Options section to tweak behaviour of volume and mute controls and skip/seek controls.
+* Volume and mute can now function independently of the current Harmony activity as they are now linked to physical device rather than the selected activity. This means Harmony volume controls can still function even though the required activity is not selected.
+
+#### Improvements
+
+* Better handling of Harmony IP address changes (for eg due to router or hub reboot).
+
+#### Fixes
+
+* When multiple source or voluume controls are used, sometimes they would attach to the wrong zone following a restart of either Roon core or this extension. (Fix requires change to Roon SDK).
 
 ### 2.0.2
 
