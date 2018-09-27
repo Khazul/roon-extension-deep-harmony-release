@@ -326,7 +326,7 @@ Once this is complete, then test all the buttons and ensure they are to your lik
 ### Options Section
 
 #### Skip/Seek track function
-* **Dual function** - Harmonmy remote is assumed to have _Reverse_ and _FastForward_ assigned to the seek/skip track buttons. Short presses will seek +/- 30 seconds and long presses will function as previous or next track.  
+* **Dual function** - Harmony remote is assumed to have _Reverse_ and _FastForward_ assigned to the seek/skip track buttons. Short presses will seek +/- 30 seconds and long presses will function as previous or next track.  
 * **Dual buttons** - then Harmony remote is assumed to have _Reverse_ and _FastForward_ assigned to short press and _InputAV_ and _InputUSB_ assigned to long press (as indicated as optionsal in the table above). Short press will seek +/-m 30 seconds and long press will skip to previous or next track. This tends to function better than the _Dual function_ option.  
 * **Reversed dual buttons** - then Harmony remote is assumed to have _Reverse_ and _FastForward_ assigned to short press and _InputAV_ and _InputUSB_ assigned to long press (as indicated as optionsal in the table above). Short press will skip to previous or next track and long press will seek +/-m 30 seconds (i.e. the reverse of the above).  
 
