@@ -241,7 +241,7 @@ _Note: this Remote pairing drop-down is only available when you have multiple Ha
 
 To pair a single remote, select the option for the remote ID number you wish to pair, click _Save_ and then proceed as described below in for pairing a single remote. When you need to pair the next remote, open settings again, expand tools and change the Remote pairing to that of the next hub and remote pair you want to pair.
 
-Finally, once all remotes have been paired withg their respective Hrmony hubs, open up settings a final time and choose _All enabled_ from the _Remote pairing_ drop-down and click _Save_.
+Finally, once all remotes have been paired with their respective Harmony hubs, open up settings a final time and choose _All enabled_ from the _Remote pairing_ drop-down and click _Save_.
 
 #### Adding the Remote Device to a single hub
 
@@ -322,10 +322,6 @@ Once you have added the Roon Control to an activity, then I suggest you map the 
 _Some buttons are not needed right now, for example all of the browsing related buttons and some have no labels at all... yet! For some of these buttons, there are planned future feature that will make use of them as Deep Harmony continues to be developed._ 
 
 Once this is complete, then test all the buttons and ensure they are to your liking and edit if necessary.
-
-These mappings can be changed in the Roon settings.
-
-Note: while there are a number of other currently unused buttons, future planned features are likely to use them which is why the channel up/down, browse and input related Roku buttons have been left alone.
 
 ### Options Section
 
