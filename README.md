@@ -2,7 +2,7 @@
 
 ## A Roon Extension for Logitech Harmony
 
-### Version: 2.1.0
+### Version: 2.1.1
 
 ## Introduction  
 
@@ -376,6 +376,12 @@ To facilitate diagnosing any issues you may encounter the extenion includes an e
 
 ## Change History
 
+### 2.1.1
+
+#### Changes
+
+* Update to latest Roon SDK (1.2) modules.
+
 ### 2.1.0
 
 #### New Features
@@ -514,7 +520,7 @@ I also work for a tiny company in the UK that produces software for mobile devic
 
 There is quite alot of crossover between with I do at work and the personal interests I pursue for myself. We have all seen the fancy future promitional video of the future automated homes and perfect integrated families etc. In my own tiny way I try to make some of the home control a reality that we can all have while my employer attempts to positively tackle some of the resulting social fall out from our modern always-on connected world.
 
-I wish more product companies were as enlightened as Roon Labs in the support they provide for community based extension of their product. While Roon (to my mind) has an excellent core architecture it is the possibility of extension and the extensions that many people in our community have created that sealed the deal for me and have made it the core of our music experience at home for my wife and myself. Finally we have a system with the richness of a PC based player, but that is standalone like a hardware player and like a the best hardware players can have a decent family friendly remote control and is multi-room and supports the sound quality aspirations of music and audio enthusiasts. Long may it continue!
+I wish more product companies were as enlightened as Roon Labs in the support they provide for community based extension of their product. While Roon (to my mind) has an excellent core architecture it is the possibility of extension and the extensions that many people in our community have created that sealed the deal for me and have made it the core of our music experience at home for my wife and myself. Finally we have a system with the richness of a PC based player, but that is standalone like a hardware player and like the best hardware players can have a decent family friendly remote control and is multi-room and supports the sound quality aspirations of music and audio enthusiasts. Long may it continue!
 
 ___
 
