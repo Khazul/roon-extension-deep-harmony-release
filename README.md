@@ -2,13 +2,49 @@
 
 ## A Roon Extension for Logitech Harmony
 
-### Version: 2.1.2
+### Version: 2.1.3
+
+[//]: # (TOC Begin)
+* [Introduction  ](#introduction)
+* [Main Features](#main-features)
+* [Distribution Formats and Compatibility](#distribution-formats-and-compatibility)
+	* [Compatibility](#compatibility)
+* [Upgrade from Deep Harmony 1.x](#upgrade-from-deep-harmony-1.x)
+* [Installation](#installation)
+	* [Docker Image](#docker-image)
+	* [Console applpications](#console-applpications)
+* [Setup](#setup)
+	* [Introduction](#introduction)
+	* [Extension Settings](#extension-settings)
+	* [Roon Audio Device Settings](#roon-audio-device-settings)
+	* [Harmony Remote Setup](#harmony-remote-setup)
+	* [Options Section](#options-section)
+	* [Tools Section](#tools-section)
+* [Troubleshooting](#troubleshooting)
+* [Change History](#change-history)
+	* [2.1.3](#)
+	* [2.1.2](#)
+	* [2.1.1](#)
+	* [2.1.0](#)
+	* [2.0.2](#)
+	* [2.0.1](#)
+	* [2.0.0](#)
+	* [1.1.0](#)
+	* [1.0.0 (beta)](#beta)
+* [FAQ](#faq)
+* [Acknowledgements](#acknowledgements)
+* [Donating and some Background](#donating-and-some-background)
+
+[//]: # (TOC End)
+
+___
+
 
 ## Introduction  
 
 **Deep Harmony** is an extension for the Roon media system from Roon Labs LLC that provides integration with Logitech's Harmony Hub remote control system to provide activity detection and selection by and for Roon and provide volume/mute control from with the Roon UI. Additionally it includes a media device emulator that allows for transport control and other functions from a Harmony Hub remote control over WiFi.
 
-## Features
+## Main Features
 
 * Supports multiple Harmony hubs
 
@@ -17,6 +53,8 @@
 * Associate Harmony activities with Roon zones for transport and other control
 
 * Volume step up/down and mute/unmute from within Roon UI
+
+* Volume control of Roon Ready devices and DACs in device volume mode and some other extensions
 
 * Select/standby activity from within Roon UI
 
@@ -38,29 +76,7 @@
 
 * Upto 10 internet radio services or playlists can be assigned to Harmony remote number keys
 
-## What's New
-
-This release was originally intended to be a few fixes and addition of auto update and a few minor tidy ups under the hood. However one thing led to another and eventually it made more sense to start on future plans now as it became clear that some of the under the hood improvements were going to need a rather more major rework. So, instead of the intended 1.0.1 release, here it is; 2.0 and allmost everything has changed.
-
-### New Features
-
-* Now supports multiple Harmony Hubs.
-* Now supports multiple Roon zones allowing for each zone to be associated with a Harmony hub+activity as needed.
-* New Roku emulator to provide many more buttons.
-* Supports a separate Roku emulator per Harmony hub. 
-* Quick access to upto 10 favourite playlists or internet radio services from Harmony remote.
-* Proper rolling and trimmed log capture system with embedded web server for easy access to recent logs as a zip file.
-* Simple software update system to download and install new versions as they become available. This is controlled from settings.
-
-### Other improvements
-
-* Roku emulator button assignments are a more natural fit with Harmony.
-* Significantly reduced docker image size (Just under 800MB reduced to around 115MB on x64 and around 95MB on ArmV7).
-* Web based access to logs and user controllable logging levels.
-* Docker images for two platforms (linux-x64, linux-armv7) including multi-platform tagged docker image.
-* Basic console applications for 4 platforms: linux-x64, linux-armv7, windows-x64, macos-x64.
-
-## Distribution Formats
+## Distribution Formats and Compatibility
 
 The extension is available as a docker image and as a _bare bones_ console application. The console applications are a by-product of the build process and at this stage do not feature installers. They do however come with a very simple script to keep them running. 
 
@@ -165,7 +181,7 @@ At the command prompt, type `run.bat`. The supplied script is a very simple scri
 
 ## Setup
 
-Once the extension is running, you should see it in the Extensions, section of Roon's settings with an Enable button. Click on this button to enable the extension.
+Once the extension is running, you should see it in the Extensions section of Roon's settings with an Enable button. Click on this button to enable the extension. Note, you can also click on the extension name _Deep Harmony_ web link to get to this documentation.
 
 ### Introduction
 
@@ -357,12 +373,17 @@ The extension will now download and unpack the update in the background and then
 #### Reset Configuration
 
 This allow full or partial reset of the extension configuration. It will not however effect Roon extension pairing, nor will you loose the remote of a remote with Harmony as this is ties to the selected remote identifier.
+
 **Yes - erase all settings** will remove all settings period. In general you should never need to do this. After doing this, you can still recover a remote pairing by selecting the remote identifier that was used before for the hub. There is no need to re-pair and setup the remote again with Harmony.
+
+**Yes - Roon pairing** will remove the Roon pairing token only. All Deep Harmony settings are preserved. Following use of this you should also remove the extension from Roon completely by clicking on _View_ in settings and then clicking _Remove_ next to the extension.
+
 **Yes - activities only** will remove all settings associated with activities (source and volume controls and control zone). Enabled hubs, associated remote identifiers and all hub based favourites will be preserved.
 
 #### Logging
 
 To facilitate diagnosing any issues you may encounter the extenion includes an extensive loggings system along with a web server to give easy access to those logs from another computer. As the Roon settings system does not appear have any means of clicking on a link within the settings UI, the link for accessing long is presented in a text box labelled _Logs (Copy the URL)_. If you click on this text, then it should be highlighthed and you should be able to copy it and paste it into the address bar of a web browser such as Chrome or Edge. The should result in downloading a zip file containing recent logs.
+
 
 ## Troubleshooting
 
@@ -376,11 +397,19 @@ To facilitate diagnosing any issues you may encounter the extenion includes an e
 
 ## Change History
 
+### 2.1.3
+
+#### Changes
+
+* Fixed corrupt extension status web link.
+* Add ToC to readme.
+
 ### 2.1.2
 
 #### Changes
 
 * Update to latest Roon SDK (1.2.1) modules to pick up bug-fix.
+* Add Roon pairing reset option.
 
 ### 2.1.1
 
