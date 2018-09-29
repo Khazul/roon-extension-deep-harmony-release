@@ -2,7 +2,7 @@
 
 ## A Roon Extension for Logitech Harmony
 
-### Version: 2.1.1
+### Version: 2.1.2
 
 ## Introduction  
 
@@ -64,7 +64,7 @@ This release was originally intended to be a few fixes and addition of auto upda
 
 The extension is available as a docker image and as a _bare bones_ console application. The console applications are a by-product of the build process and at this stage do not feature installers. They do however come with a very simple script to keep them running. 
 
-* Docker Images for 
+* Docker Images for
   * linux-x64
   * linux-armv7
 * _Bare bones_ console apps for
@@ -376,6 +376,12 @@ To facilitate diagnosing any issues you may encounter the extenion includes an e
 
 ## Change History
 
+### 2.1.2
+
+#### Changes
+
+* Update to latest Roon SDK (1.2.1) modules to pick up bug-fix.
+
 ### 2.1.1
 
 #### Changes
@@ -518,7 +524,7 @@ This project started as the first stage of a home dash-board to integrate media 
 
 I also work for a tiny company in the UK that produces software for mobile devices for use at home and at school to help to make the internet and safer and more productive place for your children as well as to encourage more restrained use of social media, youtube etc in the home to allow for better focus on the family life and personal development of your children.
 
-There is quite alot of crossover between with I do at work and the personal interests I pursue for myself. We have all seen the fancy future promitional video of the future automated homes and perfect integrated families etc. In my own tiny way I try to make some of the home control a reality that we can all have while my employer attempts to positively tackle some of the resulting social fall out from our modern always-on connected world.
+There is quite alot of crossover between with I do at work and the personal interests I pursue for myself. We have all seen the fancy future promotional videos of the future automated homes and perfect integrated families etc. In my own tiny way I try to make some of the home control a reality that we can all have while my employer attempts to positively tackle some of the resulting social fall out from our modern always-on connected world.
 
 I wish more product companies were as enlightened as Roon Labs in the support they provide for community based extension of their product. While Roon (to my mind) has an excellent core architecture it is the possibility of extension and the extensions that many people in our community have created that sealed the deal for me and have made it the core of our music experience at home for my wife and myself. Finally we have a system with the richness of a PC based player, but that is standalone like a hardware player and like the best hardware players can have a decent family friendly remote control and is multi-room and supports the sound quality aspirations of music and audio enthusiasts. Long may it continue!
 
