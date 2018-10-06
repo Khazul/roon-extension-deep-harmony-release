@@ -2,7 +2,7 @@
 
 ## A Roon Extension for Logitech Harmony
 
-### Version: 2.1.3
+### Version: 2.1.4
 
 [//]: # (TOC Begin)
 * [Introduction  ](#introduction)
@@ -22,6 +22,7 @@
 	* [Tools Section](#tools-section)
 * [Troubleshooting](#troubleshooting)
 * [Change History](#change-history)
+	* [2.1.4](#)
 	* [2.1.3](#)
 	* [2.1.2](#)
 	* [2.1.1](#)
@@ -384,7 +385,6 @@ This allow full or partial reset of the extension configuration. It will not how
 
 To facilitate diagnosing any issues you may encounter the extenion includes an extensive loggings system along with a web server to give easy access to those logs from another computer. As the Roon settings system does not appear have any means of clicking on a link within the settings UI, the link for accessing long is presented in a text box labelled _Logs (Copy the URL)_. If you click on this text, then it should be highlighthed and you should be able to copy it and paste it into the address bar of a web browser such as Chrome or Edge. The should result in downloading a zip file containing recent logs.
 
-
 ## Troubleshooting
 
 | Issue | Resolution |
@@ -396,6 +396,14 @@ To facilitate diagnosing any issues you may encounter the extenion includes an e
 | No X next to source device name | If you have a long Harmony hub name and/or activity name, then the X next to the external source control name is hidden so you cannot remove it. Use load defaults to reset the audio device settings. You will have to re-apply your chosen MQA, DSD and other settings. |
 
 ## Change History
+
+### 2.1.4
+
+#### Changes
+
+* Fixed issues with applying settings that could sometimes result in all controls being removed (causing _Add Source Control_ to not appear).
+* Attempt to block bad SSDP responses that could result in undefined hub (underlying cause unknown).
+* Added settings cleaner during startup to remove known invalid keys (including undefined hub).
 
 ### 2.1.3
 
