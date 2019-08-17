@@ -1,3 +1,5 @@
+![Logo](DHLogoColorWhiteBack240.png) 
+
 # Deep Harmony
 
 ## A Roon Extension for Logitech Harmony
