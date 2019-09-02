@@ -1,10 +1,10 @@
-![Logo](DHLogoColorWhiteBack240.png) 
+![Logo](readme/DHLogoColorWhiteBack240.png) 
 
 # Deep Harmony
 
 ## A Roon Extension for Logitech Harmony
 
-### Version: 2.5.0
+### Version: 2.6.1
 
 [//]: # (TOC Begin)
 * [Introduction  ](#introduction)
@@ -14,7 +14,7 @@
 * [Upgrade from Deep Harmony 1.x](#upgrade-from-deep-harmony-1.x)
 * [Installation](#installation)
 	* [Docker Image](#docker-image)
-	* [Console applpications](#console-applpications)
+	* [Console applications](#console-applications)
 * [Setup](#setup)
 	* [Introduction](#introduction)
 	* [Extension Settings](#extension-settings)
@@ -24,6 +24,9 @@
 	* [Tools Section](#tools-section)
 * [Troubleshooting](#troubleshooting)
 * [Change History](#change-history)
+	* [2.6.1](#)
+	* [2.6.0](#)
+	* [2.5.1](#)
 	* [2.5.0](#)
 	* [2.1.6](#)
 	* [2.1.5](#)
@@ -409,11 +412,48 @@ To facilitate diagnosing any issues you may encounter the extension includes an 
 
 ## Change History
 
-### 2.5.0
+### 2.6.0
 
 #### Changes
 
+* Various improvements to network services recovery around complete loss of networking.
+
+#### Fixes
+
+* Fix for a case of application exit upon complete loss of networking services for an extended period.
+
+### 2.6.0
+
+#### Improvements
+
+* Added very basic admin web UI to allow some admin functions to be available without requiring Roon pairing.
+* Import and Export config to make migrating between docker images easier.
+* Admin Web UI can list playlist and radio favourite button assignments.
+* Added logging of full harmony configuration.
+
+#### Changes
+
+* Change Roon extension settings link to invoke the new admin Web URL instead of logs URL.
+
+#### Fixes
+
+* Fixed incorrect grouping of Roku instant replay button so that this button can now seek back to start of current track (was incorrectly being
+* Lack of timeout on hub discovery when opening settings
+
+### 2.5.1
+
+#### Changes
+
+* Reverted node.js to 10.4.1 due to issue discovered between tooling and node 12.x onwards that could result in a crash.
+
+### 2.5.0
+
+#### Improvements
+
 * Harmony xmpp protocol stack replaced with new websocket stack to support Harmony firmware 4.15.206 onwards
+
+#### Changes
+
 * Re-wrote harmony hub discovery
 * Update node.js to 12.7
 * Update docker images to debian-slim 10.0
