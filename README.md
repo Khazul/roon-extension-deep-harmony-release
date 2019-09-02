@@ -412,7 +412,7 @@ To facilitate diagnosing any issues you may encounter the extension includes an 
 
 ## Change History
 
-### 2.6.0
+### 2.6.1
 
 #### Changes
 
