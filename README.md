@@ -4,7 +4,7 @@
 
 ## A Roon Extension for Logitech Harmony
 
-### Version: 2.6.2
+### Version: 2.6.3
 
 [//]: # (TOC Begin)
 * [Introduction  ](#introduction)
