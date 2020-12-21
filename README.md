@@ -4,7 +4,7 @@
 
 ## A Roon Extension for Logitech Harmony
 
-### Version: 2.6.4
+### Version: 2.6.5
 
 [//]: # (TOC Begin)
 * [Introduction  ](#introduction)
@@ -414,6 +414,12 @@ To facilitate diagnosing any issues you may encounter the extension includes an 
 | No X next to source device name | If you have a long Harmony hub name and/or activity name, then the X next to the external source control name is hidden so you cannot remove it. Use load defaults to reset the audio device settings. You will have to re-apply your chosen MQA, DSD and other settings. |
 
 ## Change History
+
+### 2.6.5
+
+#### Changes
+
+* Internet Radio -> My Live Radio for radio shortcuts
 
 ### 2.6.4
 
