@@ -4,7 +4,7 @@
 
 ## A Roon Extension for Logitech Harmony
 
-### Version: 2.6.5
+### Version: 2.6.6
 
 [//]: # (TOC Begin)
 * [Introduction  ](#introduction)
@@ -24,6 +24,8 @@
 	* [Tools Section](#tools-section)
 * [Troubleshooting](#troubleshooting)
 * [Change History](#change-history)
+	* [2.6.6](#)
+	* [2.6.5](#)
 	* [2.6.4](#)
 	* [2.6.3](#)
 	* [2.6.2](#)
@@ -260,7 +262,7 @@ This is the main Roon setup complete.
 
 Deep Harmony includes an emulator of a Roku TV device that serves purely as a control bridge between Harmony and the the Deep Harmony Roon extension. You will need to add the device to Harmony, then add it to your chosen activity and finally customise the buttons for the activity. 
 
-The process for pairing remote devices with hubs depends on how many hubs + remote device you have setup. If you have only a single Harmony hub, then it is straight forward and the same as pairing any other device with Harmony. However, if you have multiple Harmony hubs then the process is a little more complex as it appears that if Harmony can see several new devices on WiFi, then it appears too be a matter of chance as to which one of those device it will detect and ask you to pair and there is no means to select the correct one. To deal with this scenario, this extension has a multi-hub pairing mode that will enable one remote device at a time to simplify pairing of the correct remote with the correct Harmony hub.
+The process for pairing remote devices with hubs depends on how many hubs + remote device you have setup. If you have only a single Harmony hub, then it is straight forward and the same as pairing any other device with Harmony. However, if you have multiple Harmony hubs then the process is a little more complex as it appears that if Harmony can see several new devices on WiFi, then it appears to be a matter of chance as to which one of those device it will detect and ask you to pair and there is no means to select the correct one. To deal with this scenario, this extension has a multi-hub pairing mode that will enable one remote device at a time to simplify pairing of the correct remote with the correct Harmony hub.
 
 #### Adding the Remote Devices to multiple hubs
 
@@ -414,6 +416,18 @@ To facilitate diagnosing any issues you may encounter the extension includes an 
 | No X next to source device name | If you have a long Harmony hub name and/or activity name, then the X next to the external source control name is hidden so you cannot remove it. Use load defaults to reset the audio device settings. You will have to re-apply your chosen MQA, DSD and other settings. |
 
 ## Change History
+
+### 2.6.6
+
+#### Changes
+
+* Device control now only uses Roon's selected and standby states, so power state only appears as red or blue. The white state lead to user being able to turn off harmony even when Roon was not in control of the current activity.
+
+* Device control uses new activity complete notification from harmony to complete roon after activity change has completed. (Standby completion is still instant).
+
+#### Fixes
+
+* Fix to build process to correctly yield documents in web handler.
 
 ### 2.6.5
 
