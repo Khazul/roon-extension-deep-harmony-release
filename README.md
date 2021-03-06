@@ -4,7 +4,7 @@
 
 ## A Roon Extension for Logitech Harmony
 
-### Version: 2.6.6
+### Version: 2.6.7
 
 [//]: # (TOC Begin)
 * [Introduction  ](#introduction)
@@ -24,6 +24,7 @@
 	* [Tools Section](#tools-section)
 * [Troubleshooting](#troubleshooting)
 * [Change History](#change-history)
+	* [2.6.7](#)
 	* [2.6.6](#)
 	* [2.6.5](#)
 	* [2.6.4](#)
@@ -416,6 +417,12 @@ To facilitate diagnosing any issues you may encounter the extension includes an 
 | No X next to source device name | If you have a long Harmony hub name and/or activity name, then the X next to the external source control name is hidden so you cannot remove it. Use load defaults to reset the audio device settings. You will have to re-apply your chosen MQA, DSD and other settings. |
 
 ## Change History
+
+### 2.6.7
+
+#### Fixes
+
+* Fix to occasional non responsive transport after switch on via harmony or roon device control.
 
 ### 2.6.6
 
